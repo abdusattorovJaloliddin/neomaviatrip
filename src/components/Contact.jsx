@@ -125,11 +125,7 @@ const Contact = () => {
               <p className="text-gray-600">Ish vaqti: Du-Sha 24 soat</p>
             </div>
             <div className="shadow-md bg-white p-6 rounded-lg mt-4 h-auto">
-              <iframe
-                src="https://maps.app.goo.gl/Cpi4wNwNusckrpPe9"
-                className="w-full h-64 rounded-md border-0"
-                title="Location Map"
-              />
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.2837463913424!2d69.23896297512701!3d41.28092867131355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8af549caa943%3A0xb57ba020a1de5d09!2sMuqimiy%20ko%27chasi%2044%2C%20%D0%A2%D0%BEshkent%2C%20Toshkent%2C%20O%CA%BBzbekiston!5e0!3m2!1suz!2s!4v1747656473144!5m2!1suz!2s" width="100%" height="300px" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Muqimiy xaritasi"></iframe>
             </div>
           </div>
         </div>
