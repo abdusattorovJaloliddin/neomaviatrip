@@ -5,7 +5,7 @@ import Dubai from "../assets/saudi-8KHwzW8O.avif";
 
 function Hotel() {
   return (
-    <section id="hotel" className="my-20 mx-auto py-10 px-4">
+    <section id="mehmonxonalar" className="pt-18 px-4">
       <h4 className="text-[28px] sm:text-[30px] text-center font-bold mb-4">Mehmonxonalar</h4>
       <p className="text-center text-[16px] sm:text-[18px] text-gray-600 mb-8">Toshkentdagi eng yaxshi mehmonxonalar</p>
 

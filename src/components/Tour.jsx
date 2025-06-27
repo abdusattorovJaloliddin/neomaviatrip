@@ -91,77 +91,57 @@ function Tour() {
           </button>
         </div>
       </div>
-      <div className="mx-auto mt-10 sm:mt-16 md:mt-20 max-w-[1200px] px-2 sm:px-4 md:px-0">
-        <h5 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 ml-2 sm:ml-4 md:ml-8 text-center">
-          Mashhur shaharlar
-        </h5>
-        <ul className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 p-2 sm:p-4 mt-4 sm:mt-6">
-          <li className="shadow-lg shadow-gray-300 hover:shadow-xl w-full sm:w-[250px] md:w-[300px] h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl flex flex-col items-center">
-            <img
-              className="w-[200px] sm:w-[250px] md:w-[300px] h-[150px] sm:h-[180px] md:h-[200px] rounded-2xl object-cover"
-              src={Uzbtravel}
-              alt="Uzbekiston"
-            />
-            <p className="text-[16px] sm:text-[18px] md:text-[20px] font-bold w-full h-auto my-2 p-1 sm:p-2">
-              Dubai
-            </p>
-            <blockquote className="text-[12px] sm:text-[14px] md:text-[16px] opacity-70 p-1 sm:p-2 text-center">
-              Zamonaviy arxitektura va hashamatli savdo markazlari
-            </blockquote>
-            <button className="bg-[#F26522] rounded-2xl py-1 sm:py-2 px-2 sm:px-4 text-center text-white mt-1 sm:mt-2">
-              Batafsil ma'lumot
-            </button>
-          </li>
-          <li className="shadow-lg shadow-gray-300 hover:shadow-xl w-full sm:w-[250px] md:w-[300px] h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl flex flex-col items-center">
-            <img
-              className="w-[200px] sm:w-[250px] md:w-[300px] h-[150px] sm:h-[180px] md:h-[200px] rounded-2xl object-cover"
-              src={Turkish}
-              alt="Turkiya"
-            />
-            <p className="text-[16px] sm:text-[18px] md:text-[20px] font-bold w-full h-auto my-2 p-1 sm:p-2">
-              Saudiya Arabistoni
-            </p>
-            <blockquote className="text-[12px] sm:text-[14px] md:text-[16px] opacity-70 p-1 sm:p-2 text-center">
-              Umra ziyorati uchun maxsus paketlar
-            </blockquote>
-            <button className="bg-[#F26522] rounded-2xl py-1 sm:py-2 px-2 sm:px-4 text-center text-white mt-1 sm:mt-2">
-              Batafsil ma'lumot
-            </button>
-          </li>
-          <li className="shadow-lg shadow-gray-300 hover:shadow-xl w-full sm:w-[250px] md:w-[300px] h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl flex flex-col items-center">
-            <img
-              className="w-[200px] sm:w-[250px] md:w-[300px] h-[150px] sm:h-[180px] md:h-[200px] rounded-2xl object-cover"
-              src={Dubai}
-              alt="Dubay"
-            />
-            <p className="text-[16px] sm:text-[18px] md:text-[20px] font-bold w-full h-auto my-2 p-1 sm:p-2">
-              Istanbul
-            </p>
-            <blockquote className="text-[12px] sm:text-[14px] md:text-[16px] opacity-70 p-1 sm:p-2 text-center">
-              Tarixiy obidalar va zamonaviy madaniyat
-            </blockquote>
-            <button className="bg-[#F26522] rounded-2xl py-1 sm:py-2 px-2 sm:px-4 text-center text-white mt-1 sm:mt-2">
-              Batafsil ma'lumot
-            </button>
-          </li>
-          <li className="shadow-lg shadow-gray-300 hover:shadow-xl w-full sm:w-[250px] md:w-[300px] h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl flex flex-col items-center">
-            <img
-              className="w-[200px] sm:w-[250px] md:w-[300px] h-[150px] sm:h-[180px] md:h-[200px] rounded-2xl object-cover"
-              src={Yevropa}
-              alt="Yevropa"
-            />
-            <p className="text-[16px] sm:text-[18px] md:text-[20px] font-bold w-full h-auto my-2 p-1 sm:p-2">
-              Antalya
-            </p>
-            <blockquote className="text-[12px] sm:text-[14px] md:text-[16px] opacity-70 p-1 sm:p-2 text-center">
-              Dam olish va sohil bo'yi kurortlari
-            </blockquote>
-            <button className="bg-[#F26522] rounded-2xl py-1 sm:py-2 px-2 sm:px-4 text-center text-white mt-1 sm:mt-2">
-              Batafsil ma'lumot
-            </button>
-          </li>
-        </ul>
-      </div>
+      <div className="mx-auto mt-10 sm:mt-16 md:mt-20 max-w-[1200px] px-4">
+  <h5 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+    Mashhur shaharlar
+  </h5>
+
+  <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    {[ 
+      {
+        img: Uzbtravel,
+        title: "Dubai",
+        desc: "Zamonaviy arxitektura va hashamatli savdo markazlari",
+      },
+      {
+        img: Turkish,
+        title: "Saudiya Arabistoni",
+        desc: "Umra ziyorati uchun maxsus paketlar",
+      },
+      {
+        img: Dubai,
+        title: "Istanbul",
+        desc: "Tarixiy obidalar va zamonaviy madaniyat",
+      },
+      {
+        img: Yevropa,
+        title: "Antalya",
+        desc: "Dam olish va sohil bo'yi kurortlari",
+      },
+    ].map((item, index) => (
+      <li
+        key={index}
+        className="shadow-lg shadow-gray-300 hover:shadow-xl rounded-2xl flex flex-col items-center bg-white"
+      >
+        <img
+          src={item.img}
+          alt={item.title}
+          className="w-full h-[180px] sm:h-[200px] md:h-[220px] rounded-t-2xl object-cover"
+        />
+        <p className="text-lg sm:text-xl font-bold w-full text-center mt-4 px-2">
+          {item.title}
+        </p>
+        <blockquote className="text-sm sm:text-base text-gray-600 text-center px-4 mt-2">
+          {item.desc}
+        </blockquote>
+        <button className="bg-[#F26522] rounded-2xl py-2 px-4 text-white my-4">
+          Batafsil ma'lumot
+        </button>
+      </li>
+    ))}
+  </ul>
+</div>
+
       <div className="mx-auto p-4 sm:p-6 md:p-10 mt-8 sm:mt-10 md:mt-10 bg-orange-200 w-full">
         <h6 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 ml-2 sm:ml-4 md:ml-8 text-center">
           Hamkorlarimiz

@@ -53,7 +53,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-20" id="contact">
+    <section className="bg-gray-100 py-20" id="aloqa">
       <div className="container mx-auto px-4">
         <h6 className="text-3xl font-bold text-center mb-4">Biz bilan bog‘lanish</h6>
         <p className="text-xl text-center mb-8 text-gray-600">
@@ -61,7 +61,6 @@ const Contact = () => {
         </p>
 
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Form */}
           <div className="bg-white p-6 rounded-lg shadow-md w-full md:w-1/2">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>

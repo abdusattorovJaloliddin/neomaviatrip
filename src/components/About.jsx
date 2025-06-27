@@ -5,7 +5,7 @@ import Tour3 from '../assets/tour2-C-pCsb7w.jpg';
 
 function About() {
   return (
-    <section id="about" className="w-full bg-[#f5f5f5] py-16 px-4">
+    <section id="bizhaqimizda" className="w-full bg-[#f5f5f5] py-20 px-4 sm:px-8 md:px-12 lg:px-16">
       {/* Sarlavha */}
       <div className="text-center mb-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Biz haqimizda</h2>

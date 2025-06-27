@@ -29,7 +29,7 @@ function Flights() {
   ];
 
   return (
-    <section id="tour" className="py-16 px-4 bg-white">
+    <section id="turlar" className="py-20 px-4 bg-white">
       <div className="text-center mb-10">
         <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Turlar</h4>
         <p className="text-base sm:text-lg text-gray-700">Eng yaxshi sayohat turlari</p>
