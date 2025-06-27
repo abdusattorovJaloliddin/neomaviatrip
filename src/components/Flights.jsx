@@ -5,73 +5,58 @@ import Dubai from "../assets/saudi-8KHwzW8O.avif";
 import Yevropa from "../assets/istanbul-DLpjv57y.avif";
 
 function Flights() {
+  const tours = [
+    {
+      img: Uzbtravel,
+      title: "O'zbekiston bo'ylab sayohat",
+      desc: "O'zbekistonning tarixiy va madaniy shaharlari bo'ylab safar",
+    },
+    {
+      img: Turkish,
+      title: "Turkiya bo'ylab sayohat",
+      desc: "Istanbul, Antalya, Kappadokiya – eng mashhur joylar",
+    },
+    {
+      img: Dubai,
+      title: "Dubai",
+      desc: "Zamonaviy arxitektura va hashamatli savdo markazlari",
+    },
+    {
+      img: Yevropa,
+      title: "Yevropa bo'ylab sayohat",
+      desc: "Fransiya, Italiya, Germaniya, Ispaniya – eng go'zal shaharlar",
+    },
+  ];
+
   return (
-    <section id="tour" className="my-20 mx-auto py-10">
-      <h4 className="text-[30px] text-center font-bold m-10">Turlar</h4>
-      <p className="text-[20px] text-center">Eng yaxshi sayohat turlari</p>
-      <ul className="flex justify-between p-6 gap-6 mt-8">
-        <li className="shadow-lg shadow-gray-300 hover:shadow-xl  w-full h-[400px] rounded-2xl">
-          <img
-            className="w-[300px] h-[200px] rounded-3xl"
-            src={Uzbtravel}
-            alt=" Uzbekiston"
-          />
-          <p className="text-[20px] font-bold w-full h-auto my-4 p-2">
-            O'zbekiston bo'ylab sayohat
-          </p>
-          <blockquote className="text-[16px] opacity-70 p-2">
-            O'zbekistonning tarixiy va madaniy shaharlari bo'ylab safar
-          </blockquote>
-          <button className="bg-[#F26522] rounded-2xl py-2 px-4 text-center text-white ml-2">
-            Batafsil
-          </button>
-        </li>
-        <li className="shadow-lg shadow-gray-300 hover:shadow-xl  w-full h-[400px] rounded-2xl">
-          <img
-            className="w-[300px] h-[200px] rounded-3xl"
-            src={Turkish}
-            alt=" Turkiya"
-          />
-          <p className="text-[20px] font-bold w-full h-auto my-4 p-2">
-            Turkiya bo'ylab sayohat
-          </p>
-          <blockquote className="text-[16px] opacity-70 p-2">
-            Istanbul, Antalya, Kappadokiya - eng mashhur joylar
-          </blockquote>
-          <button className="bg-[#F26522] rounded-2xl py-2 px-4 text-center text-white ml-2">
-            Batafsil
-          </button>
-        </li>
-        <li className="shadow-lg shadow-gray-300 hover:shadow-xl  w-full h-[400px] rounded-2xl">
-          <img
-            className="w-[300px] h-[200px] rounded-3xl"
-            src={Dubai}
-            alt=" Dubay"
-          />
-          <p className="text-[20px] font-bold w-full h-auto my-4 p-2">Dubai </p>
-          <blockquote className="text-[16px] opacity-70 p-2">
-            Zamonaviy arxitektura va hashamatli savdo markazlari
-          </blockquote>
-          <button className="bg-[#F26522] rounded-2xl py-2 px-4 text-center text-white ml-2">
-            Batafsil
-          </button>
-        </li>
-        <li className="shadow-lg shadow-gray-300 hover:shadow-xl  w-full h-[400px] rounded-2xl">
-          <img
-            className="w-[300px] h-[200px] rounded-3xl"
-            src={Yevropa}
-            alt=" Yevropa"
-          />
-          <p className="text-[20px] font-bold w-full h-auto my-4 p-2">
-            Yevropa bo'ylab sayohat
-          </p>
-          <blockquote className="text-[16px] opacity-70 p-2">
-            Fransiya, Italiya, Germaniya, Ispaniya - eng go'zal shaharlar
-          </blockquote>
-          <button className="bg-[#F26522] rounded-2xl py-2 px-4 text-center text-white ml-2">
-            Batafsil
-          </button>
-        </li>
+    <section id="tour" className="py-16 px-4 bg-white">
+      <div className="text-center mb-10">
+        <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Turlar</h4>
+        <p className="text-base sm:text-lg text-gray-700">Eng yaxshi sayohat turlari</p>
+      </div>
+
+      <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
+        {tours.map((tour, index) => (
+          <li
+            key={index}
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 w-full max-w-xs mx-auto"
+          >
+            <img
+              src={tour.img}
+              alt={tour.title}
+              className="w-full h-48 object-cover rounded-t-2xl"
+            />
+            <div className="p-4">
+              <p className="text-lg font-semibold mb-2">{tour.title}</p>
+              <blockquote className="text-sm text-gray-600 opacity-80 mb-4">
+                {tour.desc}
+              </blockquote>
+              <button className="bg-[#F26522] rounded-xl py-2 px-4 text-white text-sm hover:bg-orange-600 transition">
+                Batafsil
+              </button>
+            </div>
+          </li>
+        ))}
       </ul>
     </section>
   );

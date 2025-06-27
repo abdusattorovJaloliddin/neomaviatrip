@@ -1,54 +1,80 @@
-import React from 'react'
+import React from 'react';
 import Tour1 from '../assets/tour1-CzT4uSuF.jpg';
 import Tour2 from '../assets/tour2-C-pCsb7w copy.jpg';
 import Tour3 from '../assets/tour2-C-pCsb7w.jpg';
 
 function About() {
   return (
-    <section id='about' className='w-full bg-[#f5f5f5] py-[70px]'>
-      <div>
-        <h2 className='text-[30px] my-[20px] text-center font-bold'>Biz haqimizda</h2>
-        <p className='text-[20px] my-[20px] text-center'>Sizning ishonchli sayohat hamkoringiz</p>
-        <ul className='flex items-center mx-auto p-2 my-[20px] justify-between'>
-          <li className='shadow-lg p-[20px] rounded-[10px] bg-[#ffffff] w-[600px]'>
-            <p className='font-bold text-[20px] my-[20px]'>Bizning vazifamiz</p>
-            <blockquote className='text-[20px]'>Har bir mijozga individual yondashuv orqali yuqori sifatli va qulay sayohat xizmatlarini taqdim etis</blockquote>
-          </li>
-           <li className='shadow-lg p-[20px] rounded-[10px] bg-[#ffffff] w-[600px]'>
-            <p className='font-bold text-[20px] my-[20px]'>Bizning vazifamiz</p>
-            <blockquote className='text-[20px]'>Har bir mijozga individual yondashuv orqali yuqori sifatli va qulay sayohat xizmatlarini taqdim etis</blockquote>
-          </li>
-        </ul>
+    <section id="about" className="w-full bg-[#f5f5f5] py-16 px-4">
+      {/* Sarlavha */}
+      <div className="text-center mb-10">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Biz haqimizda</h2>
+        <p className="text-lg sm:text-xl mt-4">Sizning ishonchli sayohat hamkoringiz</p>
       </div>
-      <div className='flex justify-between items-center mx-auto my-15'>
-        <blockquote className='text-[20px] w-[600px] m-10'>Bizning turizm kompaniyamiz dunyo bo‘ylab sayohatlar va qulayliklar taklif etadi. Biz sizni orzudagi manzilingizga yetkazib, unutilmas xotiralar yaratishga yordam beramiz. Kompaniyamiz UzAirways, Centrum Air, Turkish Airlines kabi yirik aviakompaniyalar bilan hamkorlik qiladi.Bizning tajribali jamoamiz har bir detallni hisobga olib, rejalashtirilgan mukammal xizmatni taqdim etadi. <br /> <br /> Biz bilan dunyoning istalgan joyiga qulay va ishonchli sayohat qiling! Xizmatlarimiz: Fransiyaga turlar va dam olish, Ko‘ngilli tibbiy sug‘urtalash, Sug‘urta xizmatlari (Toshkentda va O‘zbekistonda), Turfirmalari va turagentliklari O‘zbekistonda, Turistlarni sug‘urtalash, Turizm va sayyohlik xizmatlari O‘zbekistonda, Turlar Antaliyaga va dam olish Antaliyada, Turlar BAAga va dam olish BAAda, Turlar Bali oroliga va dam olish Bali orolida, Turlar Germaniyaga va dam olish Germaniyada, Turlar Indoneziyaga va dam olish Indoneziyada.</blockquote>
-        <div className='m-4'>
-          <img className='w-[550px] h-[300px] rounded-3xl' src={Tour1} alt="" />
-          <span className='flex items-center my-3 gap-2.5'>
-            <img className='w-[275px] h-[200px] rounded-3xl' src={Tour2} alt="" />
-            <img className='w-[275px] h-[200px] rounded-3xl' src={Tour3} alt="" />
-          </span>
+
+      {/* Vazifalar */}
+      <ul className="grid gap-6 sm:grid-cols-2 max-w-6xl mx-auto mb-12">
+        <li className="bg-white rounded-xl shadow-lg p-6">
+          <h3 className="text-xl font-semibold mb-4">Bizning vazifamiz</h3>
+          <p className="text-base text-gray-700">
+            Har bir mijozga individual yondashuv orqali yuqori sifatli va qulay sayohat xizmatlarini taqdim etish.
+          </p>
+        </li>
+        <li className="bg-white rounded-xl shadow-lg p-6">
+          <h3 className="text-xl font-semibold mb-4">Bizning vazifamiz</h3>
+          <p className="text-base text-gray-700">
+            Har bir mijozga individual yondashuv orqali yuqori sifatli va qulay sayohat xizmatlarini taqdim etish.
+          </p>
+        </li>
+      </ul>
+
+      {/* Kompaniya haqida matn va rasmlar */}
+      <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto mb-16 gap-8 px-2">
+        <blockquote className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed max-w-2xl">
+          Bizning turizm kompaniyamiz dunyo bo‘ylab sayohatlar va qulayliklar taklif etadi. Biz sizni orzudagi manzilingizga
+          yetkazib, unutilmas xotiralar yaratishga yordam beramiz. Kompaniyamiz UzAirways, Centrum Air, Turkish Airlines kabi
+          yirik aviakompaniyalar bilan hamkorlik qiladi. <br /> <br />
+          Bizning tajribali jamoamiz har bir detallni hisobga olib, rejalashtirilgan mukammal xizmatni taqdim etadi. <br /> <br />
+          <strong>Biz bilan dunyoning istalgan joyiga qulay va ishonchli sayohat qiling!</strong> Xizmatlarimiz: Fransiyaga turlar
+          va dam olish, tibbiy sug‘urtalash, turizm va sayyohlik xizmatlari O‘zbekistonda, Antaliya, BAA, Germaniya, Indoneziya va
+          Bali orollariga turlar.
+        </blockquote>
+
+        <div className="flex flex-col items-center gap-4">
+          <img
+            src={Tour1}
+            alt="Tour 1"
+            className="rounded-2xl w-full max-w-md h-60 object-cover"
+          />
+          <div className="flex gap-4">
+            <img
+              src={Tour2}
+              alt="Tour 2"
+              className="rounded-2xl w-1/2 h-48 object-cover"
+            />
+            <img
+              src={Tour3}
+              alt="Tour 3"
+              className="rounded-2xl w-1/2 h-48 object-cover"
+            />
+          </div>
         </div>
       </div>
-      <div>
-        <h3 className='text-[30px] my-[20px] text-center font-bold'>Bizning jamoamiz</h3>
-        <ul className='flex items-center mx-auto p-4 my-[20px] justify-between'>
-          <li className='shadow-lg p-[20px] rounded-[10px] bg-[#ffffff] w-[300px]'>
-            <p className='font-bold text-[20px] my-[20px] text-center shadow-amber-700'>Direktor</p>
-          </li>
-           <li className='shadow-lg p-[20px] rounded-[10px] bg-[#ffffff] w-[300px]'>
-            <p className='font-bold text-[20px] my-[20px] text-center shadow-amber-700'>Yurist</p>
-          </li>
-           <li className='shadow-lg p-[20px] rounded-[10px] bg-[#ffffff] w-[300px]'>
-            <p className='font-bold text-[20px] my-[20px] text-center shadow-amber-700'>Operator</p>
-          </li>
-          <li className='shadow-lg p-[20px] rounded-[10px] bg-[#ffffff] w-[300px]'>
-            <p className='font-bold text-[20px] my-[20px] text-center shadow-amber-700'>Administrator</p>
-          </li>
-        </ul>
+
+      {/* Jamoamiz */}
+      <div className="text-center mb-8">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold">Bizning jamoamiz</h3>
       </div>
+
+      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto px-2">
+        {['Direktor', 'Yurist', 'Operator', 'Administrator'].map((role, idx) => (
+          <li key={idx} className="bg-white shadow-lg rounded-xl p-6 text-center">
+            <p className="text-lg sm:text-xl font-semibold text-gray-800">{role}</p>
+          </li>
+        ))}
+      </ul>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;

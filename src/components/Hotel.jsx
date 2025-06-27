@@ -2,62 +2,66 @@ import React from "react";
 import Uzbtravel from "../assets/uzbtravel-Dxm7Hxle.jpg";
 import Turkish from "../assets/antaliya-q-8wNECN.avif";
 import Dubai from "../assets/saudi-8KHwzW8O.avif";
-import Yevropa from "../assets/istanbul-DLpjv57y.avif";
 
 function Hotel() {
   return (
-    <section id="hotel" className="my-20 mx-auto py-10">
-      <h4 className="text-[30px] text-center font-bold m-10">Mehmonxonalar</h4>
-      <ul className="flex justify-between p-6 gap-6 mt-8">
-        <li className="shadow-lg shadow-gray-300 hover:shadow-xl  w-full h-[400px] rounded-2xl">
+    <section id="hotel" className="my-20 mx-auto py-10 px-4">
+      <h4 className="text-[28px] sm:text-[30px] text-center font-bold mb-4">Mehmonxonalar</h4>
+      <p className="text-center text-[16px] sm:text-[18px] text-gray-600 mb-8">Toshkentdagi eng yaxshi mehmonxonalar</p>
+
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Mehmonxona 1 */}
+        <li className="shadow-lg hover:shadow-xl transition duration-300 bg-white rounded-2xl overflow-hidden">
           <img
-            className="w-full h-[200px] rounded-t-2xl"
+            className="w-full h-[200px] object-cover"
             src={Uzbtravel}
-            alt=" Uzbekiston"
+            alt="Hyatt Regency Tashkent"
           />
-          <p className="text-[20px] font-bold w-full h-auto my-4 p-2">
-            Hyatt Regency Tashkent
-          </p>
-          <blockquote className="text-[16px] opacity-70 p-2">
-            Navoi ko'chasi 1-uy, Toshkent Zamonaviy mehmonxona markaz markazida{" "}
-          </blockquote>
-          <button className="bg-[#F26522] rounded-2xl py-2 px-4 text-center text-white ml-2">
-            Batafsil ma'lumot
-          </button>
+          <div className="p-4">
+            <h5 className="text-[20px] font-bold mb-2">Hyatt Regency Tashkent</h5>
+            <p className="text-[15px] text-gray-600 mb-4">
+              Navoi ko'chasi 1-uy, Toshkent. Zamonaviy mehmonxona shahar markazida.
+            </p>
+            <button className="bg-[#F26522] rounded-xl py-2 px-4 text-white hover:bg-orange-600 transition">
+              Batafsil ma'lumot
+            </button>
+          </div>
         </li>
-        <li className="shadow-lg shadow-gray-300 hover:shadow-xl  w-full h-[400px] rounded-2xl">
+
+        {/* Mehmonxona 2 */}
+        <li className="shadow-lg hover:shadow-xl transition duration-300 bg-white rounded-2xl overflow-hidden">
           <img
-            className="w-full h-[200px] rounded-t-2xl"
+            className="w-full h-[200px] object-cover"
             src={Turkish}
-            alt=" Turkiya"
+            alt="Hilton Tashkent City"
           />
-          <p className="text-[20px] font-bold w-full h-auto my-4 p-2">
-            Hilton Tashkent City
-          </p>
-          <blockquote className="text-[16px] opacity-70 p-2">
-            Islom Karimov ko'chasi 2-uy, Toshkent Biznes mehmonxona shahar
-            markazida{" "}
-          </blockquote>
-          <button className="bg-[#F26522] rounded-2xl py-2 px-4 text-center text-white ml-2">
-            Batafsil ma'lumot
-          </button>
+          <div className="p-4">
+            <h5 className="text-[20px] font-bold mb-2">Hilton Tashkent City</h5>
+            <p className="text-[15px] text-gray-600 mb-4">
+              Islom Karimov ko'chasi 2-uy, Toshkent. Biznes mehmonxona shahar markazida.
+            </p>
+            <button className="bg-[#F26522] rounded-xl py-2 px-4 text-white hover:bg-orange-600 transition">
+              Batafsil ma'lumot
+            </button>
+          </div>
         </li>
-        <li className="shadow-lg shadow-gray-300 hover:shadow-xl  w-full h-[400px] rounded-2xl">
+
+        {/* Mehmonxona 3 */}
+        <li className="shadow-lg hover:shadow-xl transition duration-300 bg-white rounded-2xl overflow-hidden">
           <img
-            className="w-full h-[200px] rounded-t-2xl"
+            className="w-full h-[200px] object-cover"
             src={Dubai}
-            alt=" Dubay"
+            alt="City Palace Hotel"
           />
-          <p className="text-[20px] font-bold w-full h-auto my-4 p-2">
-            City Palace Hotel
-          </p>
-          <blockquote className="text-[16px] opacity-70 p-2">
-            Amir Temur ko'chasi 15-uy, Toshkent Qulay mehmonxona diqqatga
-            sazovor joylar yaqinida{" "}
-          </blockquote>
-          <button className="bg-[#F26522] rounded-2xl py-2 px-4 text-center text-white ml-2">
-            Batafsil ma'lumot
-          </button>
+          <div className="p-4">
+            <h5 className="text-[20px] font-bold mb-2">City Palace Hotel</h5>
+            <p className="text-[15px] text-gray-600 mb-4">
+              Amir Temur ko'chasi 15-uy, Toshkent. Diqqatga sazovor joylar yaqinida qulay mehmonxona.
+            </p>
+            <button className="bg-[#F26522] rounded-xl py-2 px-4 text-white hover:bg-orange-600 transition">
+              Batafsil ma'lumot
+            </button>
+          </div>
         </li>
       </ul>
     </section>
